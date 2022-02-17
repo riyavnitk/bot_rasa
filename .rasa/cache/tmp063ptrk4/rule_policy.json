@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"gen\"}}]": "actions.GetAnswerGeneral",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"gen\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerGeneral\"}, \"user\": {\"intent\": \"gen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"iecse_faq\"}}]": "actions.GetAnswerIECSEFAQ",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"iecse_faq\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerIECSEFAQ\"}, \"user\": {\"intent\": \"iecse_faq\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recruitments\"}}]": "actions.GetAnswerRecruitments",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recruitments\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerRecruitments\"}, \"user\": {\"intent\": \"recruitments\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"events\"}}]": "actions.GetAnswerEvents",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"events\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerEvents\"}, \"user\": {\"intent\": \"events\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"faq_data\"}}]": "actions.GetAnswerFAQData",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"faq_data\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerFAQData\"}, \"user\": {\"intent\": \"faq_data\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"contacts\"}}]": "actions.GetAnswerContacts",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"contacts\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerContacts\"}, \"user\": {\"intent\": \"contacts\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"faq_data\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerFAQData\"}, \"user\": {\"intent\": \"faq_data\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"faq_data\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"events\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerEvents\"}, \"user\": {\"intent\": \"events\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"contacts\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerContacts\"}, \"user\": {\"intent\": \"contacts\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"iecse_faq\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerIECSEFAQ\"}, \"user\": {\"intent\": \"iecse_faq\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"iecse_faq\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recruitments\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerRecruitments\"}, \"user\": {\"intent\": \"recruitments\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"gen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"events\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"contacts\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recruitments\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"gen\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerGeneral\"}, \"user\": {\"intent\": \"gen\"}}]"
+    ]
+  }
+}

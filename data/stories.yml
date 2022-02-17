@@ -1,0 +1,8 @@
+version : "3.0"
+
+- story: user query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy

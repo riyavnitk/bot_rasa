@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn\"}}]": "actions.GetAnswerGeneral",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerGeneral\"}, \"user\": {\"intent\": \"qn\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_iecse_faq\"}}]": "actions.GetAnswerIECSEFAQ",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_iecse_faq\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerIECSEFAQ\"}, \"user\": {\"intent\": \"qn_iecse_faq\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_recruitment\"}}]": "actions.GetAnswerRecruitments",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_recruitment\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerRecruitments\"}, \"user\": {\"intent\": \"qn_recruitment\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_event\"}}]": "actions.GetAnswerEvents",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_event\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerEvents\"}, \"user\": {\"intent\": \"qn_event\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_faqdata\"}}]": "actions.GetAnswerFAQData",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_faqdata\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerFAQData\"}, \"user\": {\"intent\": \"qn_faqdata\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_contact\"}}]": "actions.GetAnswerContacts",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_contact\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerContacts\"}, \"user\": {\"intent\": \"qn_contact\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_contact\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_event\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_faqdata\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerFAQData\"}, \"user\": {\"intent\": \"qn_faqdata\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_event\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerEvents\"}, \"user\": {\"intent\": \"qn_event\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerGeneral\"}, \"user\": {\"intent\": \"qn\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_iecse_faq\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerIECSEFAQ\"}, \"user\": {\"intent\": \"qn_iecse_faq\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_iecse_faq\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_contact\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerContacts\"}, \"user\": {\"intent\": \"qn_contact\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_faqdata\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_recruitment\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qn_recruitment\"}}, {\"prev_action\": {\"action_name\": \"actions.GetAnswerRecruitments\"}, \"user\": {\"intent\": \"qn_recruitment\"}}]"
+    ]
+  }
+}

@@ -1,0 +1,496 @@
+version: "3.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: qna_faq
+    examples: |
+      - How do I create a new git repository?
+      - How do I add only a portion of a file?
+      - How do I squash commits?
+      - How do I change my last commit message?
+      - How do I change the contents of a commit I have not pushed?
+      - How do I compare branches?
+      - How do I push my changes?
+      - How do I completely reset my local repository?
+
+  - intent: qna_faq_iecse
+    examples: |
+      - Where can I practice competitive coding ? 
+      - How to start off Coding?
+      - What is the right time to start coding?
+      - How to learn coding for placements ?
+      - How many members does the board have ?
+      - Who is the chairperson of the club ?
+      - Who is the Vice Chairperson of the club?
+      - Who is the general seceretary/ gensec/ GenSec of the club?
+      - Who are the Web Heads of the club? Who handles web?
+      - Who is the App Head of the Club? Who handles App?
+      - Who is the ML/ Machine Learning Head of the Club? Who handles ML?
+      - Who is the Design Head of the Club? Who handles design?
+      - Who are the Technical Heads of the club? Who handles Technical Stuff? Who manages Code domain?
+      - Who is HR/ Human Resources Head? Who manages HR? 
+      - Who is PR/ Public Relations Head? Who manages PR?
+      - Who is Sponsorship and Publicity Head? Who manages Sponsors?
+      - Who is the Project Head? Who manages IECSE projects?
+      - IECSE's linkedin/ facebook/ instagram/ main website ?
+      - What are some of your projects ?
+      - Tell me about IECSE. What is IECSE?
+      - What are the member benefits ?
+      - Can non-CSE branches apply? What technical knowledge does one require to join IECSE
+      - What is the full form of IECSE ?
+      - Dyutish Bandhopadyay.
+      - Vedant R. Das.
+      - Shreya Manga.
+      - Akhil Kala and Sarthak Jha.
+      - Prakhar Bhatnagar.
+      - Sagar Pathak.
+      - Nishika Agarwal.
+      - Tushar Maroo and Tejas Hegde.
+      - Harsh Rathod
+      - Rhea Adhikari
+      - Chhavi Singhal
+      - Akash Agarwal.
+
+  - intent: event
+    examples: |
+      - What is Prometheus / prom ? What's IECSE's mainstream tech event ?
+      - When is prom prometheus  ?
+      - Can anyone attend Prometheus / prom ?
+      - What about the results of Prometheus / prom ?
+      - What is Genesis ?
+      - Can anyone attend Genesis ?
+      - What about the results of Genesis ?
+      - Are there any upcoming IECSE events ? What are up coming events of the club ? What are up coming ML/Dev./Design events of the club ?
+      - Do I need to bring anything with me for this event ? Will I need a laptop for this event ?  Do we have to bring anything to the event ?
+      - Is the event open to everyone ?
+      - Is this event members only ? Is it only for members ? Is it member exclusive ? Are non members allowed ?
+      - Does the event have any prerequisites ? What are the event requirements ? What is needed for the event ? Do we require a laptop ?
+      - What are the dates of the event ? When is the event ? When will the event take place ? When be the event happening bruh ? Yo when is this event ? At which hour shall t event taketh lodging ? What's the next event going to be conducted by IECSE ?
+      - When will the results be declared  ? When will the results be up  ? Where the results at bruh ? Where can I check the results ? When will results be out ? How can I check results ? How will we get to know the results ? 
+      - How often are Events held and do they help us to improve our CS knowledge ? 
+      - Do I have to pay for it ? Is it free ?
+      - Who will be the speaker in the event  ? Who is teaching this event  ?
+      - Will internet access be provided ?
+      - I am a 1st 2nd 3rd 4th year student. Should I participate ? Will it be appropriate for me ?
+      - Are there any cash prizes for this event  ? Are there any prizes  ? Do we get something  ? Will we get certificates ?
+      - Do we need to do any installations before coming for the event ? Do I have to install any software ?
+      - When does GBM take place ?  When will we have the General Body Meeting ? What is the schedule for GBM ?
+      - What are the rules for the event ?
+
+  - intent: general
+    examples: |
+      - What is IECSE ?
+      - When was IECSE established ?
+      - What is IECSEs vision ?
+      - What is IECSEs mission ?
+      - What are the different Domains in IECSE ?
+      - Can I be in more than 1 domain ? how many domains can i be in  ?
+      - Do you have a website ?
+      - What are the projects IECSE is doing ?
+      - Do you have a blog ? Is there a medium blog ? What is Hashtag ?
+
+  - intent: contact
+    examples: |
+      - What are the projects related to web dev/ML/app dev/code/studios domains ?
+      - Whom should I contact for Hawkeye event ? Whom should I contact for Cyberhawk event ?
+      - Whom should I contact for Enigma event ?
+      - Whom should I contact for Survive event ?
+      - Whom should I contact for Negative Space event ?
+      - Whom should I contact for Streaks event ?
+      - Whom should I contact for Online Coding event ?
+      - Whom should I contact for Cryptoss enquiries ?
+      - What does the ML domain do ?  
+      - What does the Dev domain do ? 
+      - What does the Code domain do ? 
+      - What does the Hashtag domain do ? 
+      - What does the Studios domain do ? 
+      - How to start off with ML ?
+      - How to start off with app dev ?
+      - How to start off with web dev ?
+      - How to start off with code ?
+      - How to start off with design ?
+      - What are the rounds of interviews conducted for the WC ?
+      - Do they teach in code domain  or just discuss CP questions ?
+      - Who do I speak to for app/mobile application development/flutter/Android/iOS stuff ? I have a doubt in web dev/frontend/backend/web tech stack, what do I do ? Who can I talk to for help making my app ? Should I learn web dev or app dev ? I found a bug in your app, can I talk to the Dev head ? I found a bug on your website, can I talk to the Web head ?
+      - Do we have the freedom to choose any domains ?
+      - How many domains can we choose ?
+      - How should I start with competitive coding ?
+      - How can I learn video editing ? I need help with a poster.
+      - How many domains are there in the club and who are the people managing each domain ? I would like to learn more in a particular domain. Who can I contact to clear doubts that I have regarding a particular domain ? Who can we get in touch with to clarify domain specific questions ?
+      - What can I learn if I join IECSE ?
+      - Who do I contact if I want to change my domain ? 
+      - Which domain looks the best on my CV ?
+      - which domain should I start with ?
+      - Who do I contact for a clarification in an online coding question ? 
+      - Whom should I contact for cash prizes ?
+      - Can I get the resources for winter and summer projects ?
+      - Can members do projects ?
+      - What prior knowledge is required before starting Winter/Summer project ?
+      - Does anyone know julia/python/java/kotlin and can help me with it ? I want to work with you guys on a project. How can I do that ?
+      - How do I get into Management Committee/ Working Committee ? 
+      - Who can I ask about my doubts regarding the last meeting ? 
+      - I would like to speak with the board members of IECSE, and would like to write an article for a project. How can I contact them ?
+      - When was IECSE manipal founded ?
+      - Can I get someone who can help me with this ? I need help Can I get in touch with the Chairperson ? Whom should I contact for enquiry ? Whom can i contact for further enquiries ? How to contact IECSE ? There's a clash of events, can I get in touch with the Head of Operations ?
+      - Can I talk to someone regarding an IECSE member's behavior ? I have an HR complaint. Whom should I contact ? I wish to complain to the HR
+      - Where do we get to know about Prometheus ? 
+      - Whom should I contact for a collaboration ? I want to contact a person to collaborate with IECSE for an event with my club. Whom to talk to ? I am from xyz club and my club wanted to hold a collaborative event with your club for this domain.
+
+  - intent: recruitment
+    examples: |
+      - What is the recruitment process ? How do I become a member of IECSE ? How do i get in into IECSE  ?
+      - Do we need to have prior knowledge about all the domains ? I am new to programming but have been doing PSUC , will i make it ?
+      - When is the recruitment starting for the working community ? What are the eligibility criteria ? 
+      - What is working committee  ? What is mancom mancomm  ?
+      - What will be asked in recruitment ? How to clear test ?
+      - Where can I see the results ? Is the recruitment's result out ? How will I know when the recruitments will start ? Do you have an insta instagram page ?
+      - When are the recruitments ?
+      - What is GBM / General Body Meeting ?
+      - When is GBM ?
+      - Can non CS branch student come for recruitment ? Do I need to be a CS student to join ? Does my branch matter for recruitment ? 
+      - Can we join club in second year ?
+      - What's the membership charge of the club ?
+      - Do I have to attend the GBM to take part in the recruitments ?
+      - How long is the GBM for ?
+      - How many days is the recruitments for ?
+      - Do I have to be a member to sit for recruitments ?
+      - I'm a beginner, what are my chances ?
+      - How long will the interview be for ?
+      - How should I prepare for the interview ?
+      - Should I prepare for the interview ?
+      - Do I need to know how to code for joining ?
+      - How much coding do I need to know for the interview ?
+      - What languages do I need to know ?
+      - When is the membership drive ?
+
+  - intent: complete
+    examples: |
+      - What is IECSE ?
+      - When was IECSE established ?
+      - What is IECSEs vision ?
+      - What is IECSEs mission ?
+      - What does Iecse do?
+      - What are the different Domains in IECSE ?
+      - Can I be in more than 1 domain ? 
+      - how many domains can i be in  ?
+      - Do you have a website ?
+      - What are the projects IECSE is doing ?
+      - Do you have a blog ? 
+      - Is there a medium blog ?
+      - What is Hashtag ?
+      - What is Prometheus ? 
+      - What is prom ?
+      - What's IECSE's mainstream tech event ?
+      - When is prom prometheus  ?
+      - Can anyone attend Prometheus / prom ?
+      - What about the results of Prometheus / prom ?
+      - What is Genesis ?
+      - Can anyone attend Genesis ?
+      - What about the results of Genesis ?
+      - Are there any upcoming IECSE events ? 
+      - What are upcoming events of the club ? 
+      - What are upcoming Machine Learning events of the club ?
+      - What are upcoming ML events of the club ?
+      - What are upcoming DEV events of the club ?
+      - What are upcoming Design events of the club ?
+      - What are upcoming Code events of the club ?
+      - Do I need to bring anything with me for this event ? 
+      - Will I need a laptop for this event ?  
+      - Do we require a laptop ?
+      - Do we have to bring anything to the event ?
+      - Is the event open to everyone ?
+      - Is this event members only ? 
+      - Is it only for members ? 
+      - Is it member exclusive ? 
+      - Are non members allowed ?
+      - Does the event have any prerequisites ? 
+      - What are the event requirements ? 
+      - What is needed for the event ? 
+      - When will the results be declared ? 
+      - When will the results be up ? 
+      - Where the results at bruh ? 
+      - Where can I check the results ? 
+      - When will results be out ? 
+      - How can I check results ? 
+      - How will we get to know the results ? 
+      - How often are Events held and do they help us to improve our CS knowledge ? 
+      - Do I have to pay for it ? Is it free ?
+      - Who will be the speaker in the event  ? 
+      - Who is teaching this event  ?
+      - Will internet access be provided ?
+      - I am a 1st 2nd 3rd 4th year student. Should I participate ? 
+      - Will it be appropriate for me ?
+      - Are there any cash prizes for this event  ? 
+      - Are there any prizes ? 
+      - Do we get something ? 
+      - Will we get certificates ?
+      - Do we need to do any installations before coming for the event ? 
+      - Do I have to install any software ?
+      - When does GBM take place ?  
+      - When will we have the General Body Meeting ? 
+      - What is the schedule for GBM ?
+      - What are the rules for the event ?
+      - What is the recruitment process ? 
+      - How do I become a member of IECSE ? 
+      - How do i get in into IECSE  ?
+      - Do we need to have prior knowledge about all the domains ? 
+      - I am new to programming but have been doing PSUC , will i make it ?
+      - What are the eligibility criteria ? 
+      - When is the recruitment starting for the working community ? 
+      - What is working committee  ? 
+      - What is mancom mancomm  ?
+      - What will be asked in recruitment ? How to clear test ?
+      - Where can I see the results ? 
+      - Is the recruitment's result out ? 
+      - How will I know when the recruitments will start ? 
+      - Do you have an insta instagram page ?
+      - When are the recruitments ?
+      - What is GBM ?
+      - What is General Body Meeting ?
+      - When is GBM ?
+      - Can non CS branch student come for recruitment ? 
+      - Do I need to be a CS student to join ? 
+      - Does my branch matter for recruitment ? 
+      - Can we join club in second year ?
+      - What's the membership charge of the club ?
+      - Do I have to attend the GBM to take part in the recruitments ?
+      - How long is the GBM for ?
+      - How many days is the recruitments for ?
+      - Do I have to be a member to sit for recruitments ?
+      - I'm a beginner, what are my chances ?
+      - How long will the interview be for ?
+      - How should I prepare for the interview ? 
+      - Should I prepare for the interview ? 
+      - Do I need to know how to code for joining ? 
+      - How much coding do I need to know for the interview ? 
+      - What languages do I need to know ?
+      - When is the membership drive ? 
+      - What are the projects related to web dev/ML/app dev/code/studios domains ?
+      - Whom should I contact for Hawkeye event ? Whom should I contact for Cyberhawk event ?
+      - Whom should I contact for Enigma event ?
+      - Whom should I contact for Survive event ?
+      - Whom should I contact for Negative Space event ?
+      - Whom should I contact for Streaks event ?
+      - Whom should I contact for Online Coding event ?
+      - Whom should I contact for Cryptoss enquiries ?
+      - What does the ML domain do ?  
+      - What does the Dev domain do ? 
+      - What does the Code domain do ? 
+      - What does the Hashtag domain do ? 
+      - What does the Studios domain do ? 
+      - How to start off with ML ?
+      - How to start off with app dev ?
+      - How to start off with web dev ?
+      - How to start off with code ?
+      - How to start off with design ?
+      - What are the rounds of interviews conducted for the WC ?
+      - Do they teach in code domain  or just discuss CP questions ?
+      - Who do I speak to for app/mobile application development/flutter/Android/iOS stuff ? 
+      - I have a doubt in web dev/frontend/backend/web tech stack, what do I do ?
+      - Who can I talk to for help making my app ? 
+      - Should I learn web dev or app dev ? 
+      - I found a bug in your app, can I talk to the Dev head ? 
+      - I found a bug on your website, can I talk to the Web head ?
+      - Do we have the freedom to choose any domains ?
+      - How many domains can we choose ?
+      - How should I start with cp 
+      - How should I start with competitive coding ?
+      - How can I learn video editing ? I need help with a poster.
+      - How many domains are there in the club and who are the people managing each domain ? 
+      - What can I learn in IECSE ?
+      - Who do I contact if I want to change my domain ? 
+      - Which domain looks the best on my CV ?
+      - which domain should I start with ?
+      - Who do I contact for a clarification in an online coding question ? 
+      - Whom should I contact for cash prizes ?
+      - Can I get the resources for winter and summer projects ?
+      - Can members do projects ?
+      - What prior knowledge is required before starting Winter/Summer project ?
+      - Does anyone know julia/python/java/kotlin and can help me with it ? 
+      - I want to work with you guys on a project. How can I do that ?
+      - How do I get into Management Committee/ Working Committee ? 
+      - Who can I ask about my doubts regarding the last meeting ? 
+      - I would like to speak with the board members of IECSE, and would like to write an article for a project. How can I contact them ?
+      - When was IECSE manipal founded ?
+      - Can I get someone who can help me with this ? 
+      - I need help Can I get in touch with the Chairperson ? 
+      - Whom should I contact for enquiry ?
+      - Whom can i contact for further enquiries ? 
+      - How to contact IECSE ? 
+      - There's a clash of events, can I get in touch with the Head of Operations ?
+      - Can I talk to someone regarding an IECSE member's behavior ? 
+      - I have an HR complaint. Whom should I contact ? 
+      - I wish to complain to the HR
+      - Where do we get to know about Prometheus ? 
+      - Whom should I contact for a collaboration ? 
+      - I want to contact a person to collaborate with IECSE for an event with my club. Whom to talk to ? 
+      - I am from xyz club and my club wanted to hold a collaborative event with your club for this domain.
+      - Good Morning 
+      - Good afternoon 
+      - Good evening 
+      - Hola Hi Hello 
+      - Hey Yo Hiiii Heya 
+      - Heyo Hi there 
+      - Hello iecse Hello bot
+      - How are you doing ? 
+      - What's going on with you ? 
+      - Whats Up ? 
+      - how are you ? 
+      - What have you been up to lately ?
+      - what is your name ? who is your creator ? what all functions can you do ? Who are you ? How can you help me ? What can you do ?  
+      - I need some help I have some queries Can you help me ? 
+      - I need help I need some info
+      - Where can I practice competitive coding ? 
+      - I have heard about an event going to be conducted by IECSE Can I get more details about it ?
+      - I want to register for an event where should I give my details ?
+      - When is the next members event ?
+      - How many members does the board have ?
+      - IECSE's linkedin/fb/insta/main website ?
+      - What are some of your projects ?
+      - Tell me about IECSE
+      - What are the member benefits ?
+      - Is any pre knowledge required ? 
+      - Is there any specific language for technical rounds ? 
+      - Can non computer department also apply for technical rounds ?
+      - What is the full form of IECSE ?
+      - What is ML ?
+      - What is Machine Learning ?
+      - What is design?
+      - What is cp ?
+      - What is competitive programming ?
+      - Do you know coding?
+      - You're giving wrong answers
+      - Why should I join IECSE ?
+      - Which is better IECSE or ... ?
+      - Is ... better than IECSE ?
+      - Is IECSE better than ... ?
+      - What is Dribbble Meet ?
+      - What is Pixel Week ?
+      - What is Design Meets ?
+      - What is Web Meets ?
+      - What is Web.IO ?
+      - What is Code Meets ?
+      - What is PSUC Workshop ?
+      - Do you have workshop for PSUC ?
+      - What is Winter Code Season and Code-heat ?
+      - What is Kaiser & Intersection Coding ?
+      - What is App Dev Weekend ?
+      - Do you have an App Dev Weekend ?
+      - What is Enigma ?
+      - Who is Dhruvik ?
+      - Who is Nimesh ?
+      - Who is Ameya ?
+      - Who is Devesh ?
+      - Who is Samadrita ?
+      - Who is Devang ?
+      - Who is Swadhin ?
+      - Who is Keoul ?
+      - Who is Sanchit ?
+      - Who is Soham ?
+      - Who is Ansh ?
+      - Who is Sayantan ?
+      - Who is Deepak ?
+      - Who is Ayush ?
+      - Who is Jeet ?
+      - Who is the chairperson of the club ?
+      - Who is the vice-chairperson ?
+      - Who is the Technical Head ?
+      - Who is the General Secretary ?
+      - Who is the Treasurer ?
+      - Who is the Technical Head ?
+      - Who is the Head of Web Development ?
+      - Who is the Project Head ?
+      - Who is the Head of Machine Learning ?
+      - Who is the Head of Design Publicity ?
+      - Who is the Head of Design ?
+      - Who is the Head of Human Resources ?
+      - Who is the Head of Public Relations ?
+      - Who is the Head of sponsorships ?
